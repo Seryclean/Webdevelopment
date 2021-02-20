@@ -1,0 +1,14 @@
+{
+  "name": "webdevelopment",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "watch-scss": "nodemon --watch styles.scss --ext scss --exec \"npm-run-all css-compile\"",
+    "css-compile": "sass --style expanded --no-error-css styles.scss:styles.css"
+  }
+}
